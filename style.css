@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #020304;
+  color: #f0fff5;
+  font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, "Consolas", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.terminal-window {
+  background-color: #17151e;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 850px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+}
+
+.terminal-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 13px;
+  color: #8b949e;
+  user-select: none;
+}
+
+.terminal-body {
+  padding: 24px;
+  min-height: 480px;
+  max-height: 70vh;
+  overflow-y: auto;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.25px;
+}
+
+.ascii-art {
+  padding: 5px;
+  color: #ffb1f1;
+  font-family: inherit;
+  white-space: pre;
+  line-height: 1.2;
+  overflow-x: auto;
+  margin-bottom: 18px;
+}
+
+.welcome-text {
+  margin-bottom: 18px;
+  color: #a0aec0;
+}
+
+/* Color & formatting classes */
+.bold {
+  font-weight: 700;
+}
+
+.pink {
+  color: #ff00d0;
+}
+
+.light-pink {
+  color: #ffb1f1;
+}
+
+.green {
+  color: #58ff95;
+}
+
+.cyan {
+  color: #58e6ff;
+}
+
+.yellow {
+  color: #ffe066;
+}
+
+.purple {
+  color: #c084fc;
+}
+
+.gray {
+  color: #8b949e;
+}
+
+.cmd {
+  color: #ff00d0;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #ff00d0;
+  font-weight: bold;
+}
+
+/* Command echo line in output - matches input color */
+.command-echo {
+  color: #58ff95;
+  font-weight: 600;
+}
+
+.link {
+  color: #58e6ff;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #58ff95;
+}
+
+#output {
+  margin-bottom: 12px;
+}
+
+#output p {
+  margin: 6px 0;
+  line-height: 1.65;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+#terminal_form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.prompt {
+  color: #ff00d0;
+  font-weight: bold;
+  user-select: none;
+  font-size: 16px;
+}
+
+#input_field {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #58ff95;
+  font-family: inherit;
+  font-size: 15px;
+  flex: 1;
+  caret-color: #ff00d0;
+}
+
+/* Scrollbar Styling */
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: #17151e;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
