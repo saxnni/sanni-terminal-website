@@ -1,7 +1,6 @@
 const output = document.getElementById("output");
 const form = document.getElementById("terminal_form");
 const input = document.getElementById("input_field");
-
 const terminalBody = document.querySelector(".terminal-body");
 
 function escapeHtml(str) {
@@ -26,13 +25,6 @@ document.querySelector(".terminal-window")?.addEventListener("click", () => {
   input.focus();
 });
 
-function addLine(text) {
-  const p = document.createElement("p");
-  p.textContent = text;
-  output.appendChild(p);
-  window.scrollTo(0, document.body.scrollHeight);
-}
-
 function addLines(linesArray) {
   linesArray.forEach((line) => addLine(line));
 }
@@ -40,11 +32,10 @@ function addLines(linesArray) {
 function command(cmd) {
   const trimmed = cmd.trim();
 
+  // Print command line with prompt in magenta and user text in neon green (matching input field)
   addLine(
-    `<span class="prompt">&gt;</span> <span class="command-echo">${escapeHtml(trimmed)}</span>`,
+    `<span class="prompt">&gt;</span> <span class="command-echo">${escapeHtml(trimmed)}</span>`
   );
-
-  addLine(`> ${trimmed}`);
 
   switch (cmd.toLowerCase()) {
     case "help":
@@ -55,6 +46,7 @@ function command(cmd) {
       break;
     case "skills":
       addLines(skills);
+      break;
     case "projects":
       addLines(projects);
       break;
@@ -64,18 +56,15 @@ function command(cmd) {
     case "info":
       addLines(info);
       break;
-
-    case "projects":
-      addLines(projects);
-      break;
-
     case "clear":
       output.innerHTML = "";
       break;
     case "":
       break;
     default:
-      addLine("Command not found. Type 'help' for available commands");
+      addLine(
+        "<span class='pink'>Command not found.</span> Type '<span class='cmd'>help</span>' for available commands."
+      );
   }
 }
 

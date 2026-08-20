@@ -7,7 +7,9 @@
 body {
   background-color: #020304;
   color: #f0fff5;
-  font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, "Consolas", monospace;
+  font-family:
+    "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, "Consolas",
+    monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -29,6 +31,7 @@ body {
 }
 
 .terminal-title {
+  padding: 5px;
   position: absolute;
   left: 0;
   right: 0;
@@ -58,12 +61,6 @@ body {
   margin-bottom: 18px;
 }
 
-.welcome-text {
-  margin-bottom: 18px;
-  color: #a0aec0;
-}
-
-/* Color & formatting classes */
 .bold {
   font-weight: 700;
 }
@@ -106,7 +103,6 @@ body {
   font-weight: bold;
 }
 
-/* Command echo line in output - matches input color */
 .command-echo {
   color: #58ff95;
   font-weight: 600;
@@ -157,7 +153,6 @@ body {
   caret-color: #ff00d0;
 }
 
-/* Scrollbar Styling */
 .terminal-body::-webkit-scrollbar {
   width: 8px;
 }
