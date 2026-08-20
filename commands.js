@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const help = [
   '<span class="cmd">whois</span>       <span class="gray">--------</span>  Who is Sanni?',
   '<span class="cmd">skills</span>      <span class="gray">--------</span>  List of technical skills',
@@ -10,7 +9,7 @@ const help = [
 
 const whois = [
   'I\'m <span class="yellow bold">Sanni</span>, a third year <span class="cyan">information and software engineering</span> student at <span class="purple bold">JYU</span>.',
-  'I like to do small projects like this one in my freetime :)',
+  "I like to do small projects like this one in my freetime :)",
   'I\'m currently doing a summer internship as a <span class="green bold">software test automation trainee</span>.',
   'Besides work and school I do <span class="pink">figure skating</span>, go to the <span class="pink">gym</span>, and play the <span class="pink">guitar</span>.',
 ];
@@ -43,7 +42,7 @@ const projects = [
   '- <span class="bold cyan">Robot Framework Automation:</span> Software test automation suites and test scripts',
   '- <span class="bold cyan">Tic-Tac-Toe (Ristinolla):</span> Python terminal-based game',
 ];
-=======
+
 help = [
   "whois    --------    Who is Sanni?",
   "projects    --------    View coding projects",
@@ -62,4 +61,3 @@ const projects = ["- Terminal styled webpage"];
 const socials = ["GitHub: https://github.com/saxnni"];
 
 const info = ["Email: sanni.ripatti@student.jyu.fi"];
->>>>>>> origin/main
