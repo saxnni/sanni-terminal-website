@@ -21,7 +21,7 @@ const skills = [
   '- <span class="bold yellow">Data analysis & visualization:</span> <span class="green">R, RStudio</span>',
   '- <span class="bold yellow">Version control:</span> <span class="green">Git, GitHub, GitLab</span>',
   '- <span class="bold yellow">UML modeling:</span> <span class="green">Class, sequence, state machine and activity diagrams</span>',
-  '- <span class="bold yellow">Project tools:</span> <span class="green">Jira, Confluence</span>',
+  '- <span class="bold yellow">Agile & project management:</span> <span class="green">Jira (sprint planning, Kanban boards), Confluence (technical specs, documentation)</span>',
   '- <span class="bold yellow">Operating systems:</span> <span class="green">macOS, Linux Ubuntu, Windows</span>',
 ];
 
@@ -36,8 +36,8 @@ const info = [
 const projects = [
   '- <span class="bold cyan">Terminal Website:</span> Interactive terminal-themed portfolio website <span class="purple">(HTML, CSS, JavaScript)</span>',
   '- <span class="bold cyan">Patience Timer:</span> macOS timer app built with Swift and Xcode, featuring <span class="green">Robot Framework</span> automated tests',
-  '- <span class="bold cyan">Kirjasto (Ohj 2):</span> Library management desktop application with GUI built with <span class="yellow">Java</span> and <span class="yellow">JavaFX</span>',
-  '- <span class="bold cyan">Marsukoodi (Ohj 1):</span> 2D physics platformer game developed in <span class="yellow">C#</span> with the <span class="yellow">Jypeli</span> game engine',
+  '- <span class="bold cyan">Kirjasto (Course project Programming 2):</span> Library management desktop application with GUI built with <span class="yellow">Java</span> and <span class="yellow">JavaFX</span>',
+  '- <span class="bold cyan">Marsukoodi (Course project Programming 1):</span> 2D physics platformer game developed in <span class="yellow">C#</span> with the <span class="yellow">Jypeli</span> game engine',
   '- <span class="bold cyan">Arduino Projects:</span> Microcontroller projects including lyric display, bomb buzzer, and passive buzzer',
   '- <span class="bold cyan">Robot Framework Automation:</span> Software test automation suites and test scripts',
   '- <span class="bold cyan">Tic-Tac-Toe (Ristinolla):</span> Python terminal-based game',

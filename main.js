@@ -32,9 +32,8 @@ function addLines(linesArray) {
 function command(cmd) {
   const trimmed = cmd.trim();
 
-  // Print command line with prompt in magenta and user text in neon green (matching input field)
   addLine(
-    `<span class="prompt">&gt;</span> <span class="command-echo">${escapeHtml(trimmed)}</span>`
+    `<span class="prompt">&gt;</span> <span class="command-echo">${escapeHtml(trimmed)}</span>`,
   );
 
   switch (cmd.toLowerCase()) {
@@ -63,7 +62,7 @@ function command(cmd) {
       break;
     default:
       addLine(
-        "<span class='pink'>Command not found.</span> Type '<span class='cmd'>help</span>' for available commands."
+        "<span class='pink'>Command not found.</span> Type '<span class='cmd'>help</span>' for available commands.",
       );
   }
 }
